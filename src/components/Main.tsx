@@ -5,7 +5,7 @@ import Divider from '@mui/material/Divider';
 import Markdown from './Markdown';
 import { Post } from '../blogs';
 import Link from '@mui/material/Link';
-import { RouterProvider as Router, Routes, Route } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import BlogPost from './BlogPost';
 
 
