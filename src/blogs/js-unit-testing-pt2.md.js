@@ -1,10 +1,6 @@
-// import image1 from '../Images/jsunittesting1.png';
-// import image2 from '../Images/jsunittesting2.png';
+import image1 from '../Images/jsunittesting1.png';
+import image2 from '../Images/jsunittesting2.png';
 import image3 from '../Images/jsunittesting3.png';
-
-const image = require('../Images/jsunittesting3.png');
-
-console.log(image);
 
 const jsUnitTesting2 = "\n\
 # JavaScript Unit Testing for .NET Developers — Part 2 Testing and Mocking with Jest\n\
@@ -116,11 +112,11 @@ These two sentences can essentially be summed up by saying “you shouldn’t de
 \n\
 By not depending upon abstractions your code becomes coupled. Imagine for a moment you are writing an API and as part of that API, you have a controller which has a service class which is essentially a wrapper for components within the system like persistence and saving data to a database. Your classes and dependencies would look like this:\n\
 \n" +
-`![image](${image})\n` +
+`<center><img src="${image1}"></center>\n` +
 "\n\
 If you decided to test either the controller or service classes, you would have no choice but to call this an integration test. You cannot independently test a singular component without the lower level components. Instead what the DI principles teach us and what we usually do in .Net is to have something that looks more like this:\n\
 \n" +
-`![image](${image3})\n` +
+`<center><img src="${image2}"></center>\n` +
 "\n\
 Here we have inverted the flow of control. Sure we have more things but in testing the controller I can test it independently from the service class by creating a stub or mock `IService`. I also get more control over my expected outputs given the fake object I create and use when testing the controller.\n\
 \n\
@@ -229,7 +225,7 @@ export default () => 'fakeLocale';\n\
 As you can see it is a simple function that simply returns the “fakeLocale” string.  When our reducer runs for the first time in our test it’s going to get its initial state (the locale) from this function, setting the locale to be “fakeLocale” and so we can test for this in our test.\n\
 In order to get this to work though, we need a new folder where our `defaultLocaleProvider` lives in our solution called “__mocks__” and inside of that we must have another file named the same as the file we are mocking like so:\n\
 \n" +
-`![image](${image3})\n` +
+`<center><img src="${image3}"></center>\n` +
 "\n\
 This mocks folder is a special folder that jest looks into when it’s looking for mock implementations. Generally, you perform this type of mocking when mocking a module.\n\
 Jest.mock has an advantage as it automatically sets all exports of a module to the Mock Function later allowing you to overwrite them.\n\

@@ -44,6 +44,7 @@ const sidebar = {
     { title: 'SqlProvider', url: 'https://github.com/NealCallaghan/SQLProvider' },
     { title: 'InstagramAvalon', url: 'https://github.com/NealCallaghan/InstagramAvalon' },
     { title: 'SharePriceAlerts', url: 'https://github.com/NealCallaghan/SharePriceAlerts' },
+    { title: 'TimeTracker', url: 'https://github.com/NealCallaghan/TimeTracker' },
     { title: 'WixSharp', url: 'https://github.com/NealCallaghan/wixsharp' },
   ],
   social: [

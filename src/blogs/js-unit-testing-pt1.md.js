@@ -1,5 +1,5 @@
 import image from '../Images/majestic1.png';
-console.log(image);
+
 const jsUnitTesting1 = "\n\
 # Javascript unit testing for .net developers Part 1 Environment Setup and Tooling\n\
 \n\
@@ -34,7 +34,7 @@ To install Enzyme, go to your application directory and run the command npm i --
 ## Setup Majestic\n\
 Jest in itself is a great tool however at the moment you will only be able to run tests on the command line, this is ok for some but if you have a great many tests failing it can be overwhelming to see so many failing unit tests within the command window and try to figure out the problem.\n\
 " +
-`![image](${image})\n` +
+`<center><img src="${image}"></center>\n` +
 "\n\
 A great tool which gives you a similar experience to a Visual Studio test explorer is Majestic (https://github.com/Raathigesh/majestic).\n\
 \n\
