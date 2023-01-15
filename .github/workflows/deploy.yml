@@ -15,7 +15,7 @@ jobs:
       - name: Configure Node
         uses: actions/setup-node@v1
         with:
-          node-version: '18.12.1'
+          node-version: '12.18.4'
       
       - name: Install
         run: |
