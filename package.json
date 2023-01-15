@@ -149,5 +149,6 @@
     "presets": [
       "react-app"
     ]
-  }
+  },
+  "homepage" : "https://nealcallaghan.github.io/my-blog"
 }
