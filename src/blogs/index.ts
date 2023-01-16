@@ -16,9 +16,9 @@ export interface Post {
 
 const innerPostArray: Array<BlogPostMeta> = 
   [
-   { PostText: reactIntl, PostLink:'react-intl' },
-   { PostText: jsUnitTestingPt1, PostLink:'js-unit-testing-pt1' },
-   { PostText: jsUnitTestingPt2, PostLink:'js-unit-testing-pt2' }
+   { PostText: reactIntl, PostLink:'/react-intl' },
+   { PostText: jsUnitTestingPt1, PostLink:'/js-unit-testing-pt1' },
+   { PostText: jsUnitTestingPt2, PostLink:'/js-unit-testing-pt2' }
   ];
 
 const PostArray: Array<Post> = innerPostArray
