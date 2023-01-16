@@ -42,10 +42,11 @@ const sidebar = {
   projects: [
     { title: 'TypeSwitch', url: 'https://github.com/NealCallaghan/TypeSwitch' },
     { title: 'SqlProvider', url: 'https://github.com/NealCallaghan/SQLProvider' },
+    { title: 'This Blog', url: 'https://github.com/NealCallaghan/NealCallaghan.github.io' },
     { title: 'InstagramAvalon', url: 'https://github.com/NealCallaghan/InstagramAvalon' },
     { title: 'SharePriceAlerts', url: 'https://github.com/NealCallaghan/SharePriceAlerts' },
     { title: 'TimeTracker', url: 'https://github.com/NealCallaghan/TimeTracker' },
-    { title: 'WixSharp', url: 'https://github.com/NealCallaghan/wixsharp' },
+    { title: 'WixSharp', url: 'https://github.com/NealCallaghan/wixsharp' }, 
   ],
   social: [
     { name: 'GitHub', icon: GitHubIcon, link: 'https://github.com/NealCallaghan' },
