@@ -33,7 +33,7 @@ export default function Main(props: MainProps) {
         {title}
       </Typography>
       <Divider />
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
       
         <Routes>
           <Route path='/' element={
