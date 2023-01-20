@@ -5,7 +5,7 @@ import Divider from '@mui/material/Divider';
 import Markdown from './Markdown';
 import { Post } from '../blogs';
 import Link from '@mui/material/Link';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import BlogPost from './BlogPost';
 
 
@@ -33,21 +33,19 @@ export default function Main(props: MainProps) {
         {title}
       </Typography>
       <Divider />
-      <Router basename={process.env.PUBLIC_URL}>
-      
+      <Router basename={process.env.PUBLIC_URL}>     
         <Routes>
-          <Route path='/' element={
+          <Route path="/" element={
             posts.map(post => (
-              <Link href={post.PostLink} underline='none' color='inherit'>
+              <Link href={`#${post.PostLink}`} underline='none' color='inherit'>
                 <Markdown className="markdown" key={post.Postkey}>
                   {post.PostSummary}
                 </Markdown>
                 <Divider />
-              </Link>
-              
+              </Link>              
             ))
           } />
-          { posts.map(post => (<Route path={post.PostLink} element={ <BlogPost key={post.Postkey} text={post.PostText} /> } /> )) }
+          { posts.map((post,i) => (<Route path={post.PostLink} element={ <BlogPost key={i} text={post.PostText} /> } /> )) }
         </Routes>
       </Router>
     </Grid>
